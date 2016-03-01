@@ -6,11 +6,13 @@ import org.testng.annotations.Test;
 /**
  * Created by g.gordeev on 01.03.2016.
  */
-public class SquareTests {
+public class PointTests {
 
   @Test
   public void testArea() {
-  Square s = new Square(4);
-    Assert.assertEquals(16.0, s.area());
+    Point p1 = new Point(4, 3);
+    Point p2 = new Point(3, 7);
+
+    Assert.assertEquals(Point.distance(p1, p2), 4.123105625617661);
   }
 }
