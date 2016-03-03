@@ -17,7 +17,7 @@ import static org.openqa.selenium.OutputType.*;
 public class GroupCreationTests {
     FirefoxDriver wd;
 
-    
+
     @BeforeMethod
     public void setUp() throws Exception {
         wd = new FirefoxDriver();
