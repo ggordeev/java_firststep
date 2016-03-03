@@ -1,5 +1,6 @@
-package ggordeev.addressbook;
+package ggordeev.addressbook.tests;
 
+import ggordeev.addressbook.model.AddNewPersonData;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -9,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
 
-public class AddNewPerson {
+public class AddNewPersonTests {
   FirefoxDriver wd;
 
   @BeforeMethod

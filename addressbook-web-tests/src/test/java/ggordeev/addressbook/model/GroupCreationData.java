@@ -1,11 +1,11 @@
-package ggordeev.addressbook;
+package ggordeev.addressbook.model;
 
-public class GroupData {
+public class GroupCreationData {
   private final String name;
   private final String header;
   private final String footer;
 
-  public GroupData(String name, String header, String footer) {
+  public GroupCreationData(String name, String header, String footer) {
     this.name = name;
     this.header = header;
     this.footer = footer;

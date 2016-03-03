@@ -1,4 +1,4 @@
-package ggordeev.addressbook;
+package ggordeev.addressbook.model;
 
 public class AddNewPersonData {
   private final String firstname;
