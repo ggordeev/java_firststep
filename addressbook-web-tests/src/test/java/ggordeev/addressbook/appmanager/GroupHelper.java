@@ -1,6 +1,6 @@
 package ggordeev.addressbook.appmanager;
 
-import ggordeev.addressbook.model.GroupCreationData;
+import ggordeev.addressbook.model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -21,7 +21,7 @@ public class GroupHelper extends HelperBase {
     click(By.name("submit"));
   }
 
-  public void fillGroupForm(GroupCreationData groupData) {
+  public void fillGroupForm(GroupData groupData) {
     type(By.name("group_name"), groupData.getName());
     type(By.name("group_header"), groupData.getHeader());
     type(By.name("group_footer"), groupData.getFooter());
@@ -38,4 +38,16 @@ public class GroupHelper extends HelperBase {
   public void selectGroup() {
     click(By.name("selected[]"));
   }
+
+  public void submitGroupUpdate() {
+    wd.findElement(By.name("update")).click();
+  }
+
+  public void initGroupModification() {
+    if (!wd.findElement(By.name("selected[]")).isSelected()) {
+      wd.findElement(By.name("selected[]")).click();
+    }
+    wd.findElement(By.xpath("//div[@id='content']/form/input[6]")).click();
+  }
+
 }

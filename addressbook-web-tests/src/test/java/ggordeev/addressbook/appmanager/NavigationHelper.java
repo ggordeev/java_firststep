@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  * Created by g.gordeev on 03.03.2016.
  */
 public class NavigationHelper extends HelperBase {
- private FirefoxDriver wd;
+  private FirefoxDriver wd;
 
   public NavigationHelper(FirefoxDriver wd) {
     super(wd);
@@ -16,4 +16,12 @@ public class NavigationHelper extends HelperBase {
   public void gotoGroupPage() {
     click(By.linkText("groups"));
   }
-}
+
+  public void gotoAddNewPage() {
+    click(By.linkText("add new"));
+  }
+
+  public void gotoHomePage() {
+    click(By.linkText("home"));
+  }
+ }

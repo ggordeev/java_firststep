@@ -1,6 +1,6 @@
 package ggordeev.addressbook.tests;
 
-import ggordeev.addressbook.model.GroupCreationData;
+import ggordeev.addressbook.model.GroupData;
 import org.testng.annotations.Test;
 
 public class GroupCreationTests extends TestBase {
@@ -11,7 +11,7 @@ public class GroupCreationTests extends TestBase {
 
     app.getNavigationHelper().gotoGroupPage();
     app.getGroupHelper().initGroupCreation();
-    app.getGroupHelper().fillGroupForm(new GroupCreationData("test1", "test2", "test3"));
+    app.getGroupHelper().fillGroupForm(new GroupData("test1", "test2", "test3"));
     app.getGroupHelper().submitGroupCreation();
     app.getGroupHelper().returntoGroupCreation();
   }
