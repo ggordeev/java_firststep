@@ -3,6 +3,7 @@ package ggordeev.addressbook.appmanager;
 import ggordeev.addressbook.model.GroupData;
 import ggordeev.addressbook.model.PersonData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
@@ -11,7 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class PersonHelper extends HelperBase {
 
-  public PersonHelper(FirefoxDriver wd) {
+  public PersonHelper(WebDriver wd) {
     super(wd);
   }
 
